@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ColorMeDirty</string>
+    <string name="copyright">Copyright &#169; 2020; Crexa,Inc</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
