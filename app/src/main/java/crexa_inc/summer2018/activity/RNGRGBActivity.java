@@ -45,9 +45,10 @@ public class RNGRGBActivity extends BaseActivity {
         history5.add(color);
         view.setBackgroundColor(color);
         bt_text.setTextColor(color);
-        toastShort(Integer.toString(color));
-        textview1.setText("#" + colorRNG.getHexString());
-        textview2.setText(Integer.toString(color));
+        //toastShort(Integer.toString(color));
+        System.out.println(color);
+        textview1.setText("#" + Integer.toHexString(color).toUpperCase());
+        textview2.setText(Integer.toString(-1*color));
 
 
     }
