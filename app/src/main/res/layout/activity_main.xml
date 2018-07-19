@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".util.MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/main_view">
 
 
-    <view
-        android:id="main_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        ></view>
+    <!--<View-->
+       <!---->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--&gt;</View>-->
 
 
     <!--<TextView-->

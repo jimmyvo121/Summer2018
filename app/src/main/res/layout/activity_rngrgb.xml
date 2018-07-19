@@ -2,26 +2,60 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Relative_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.RNGRGBActivity"
 
     >
 
-    <GridLayout
-        android:id="@+id/text_grid"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent">
-
-
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
 
         <TextView
-            android:id="@+id/textview_1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
 
+            android:id="@+id/textview_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#HEXTEST"
+            android:layout_marginBottom="30dp"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textSize="55sp"
             />
 
-    </GridLayout>
+        <TextView
+            android:layout_below="@id/textview_1"
+            android:id="@+id/textview_2"
+            android:textSize="35sp"
+            android:text="RGBTEST"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/generate_bt"
+        android:padding="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#DDDDDD"
+        android:textAlignment="center"
+        android:text="Generate Color"
+        android:textSize="15dp"
+        />
+
 
 </RelativeLayout>
