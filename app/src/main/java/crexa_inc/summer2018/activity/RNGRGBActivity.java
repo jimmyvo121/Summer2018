@@ -52,6 +52,7 @@ public class RNGRGBActivity extends BaseActivity {
 
 
     }
+    //@OnClick(R.id.add_color)
 
 
     protected void onCreate(Bundle savedInstanceState) {

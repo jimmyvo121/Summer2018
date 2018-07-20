@@ -42,41 +42,41 @@
     </RelativeLayout>
 
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="60dp"
-
-    android:padding="5dp"
-    android:layout_marginBottom="5dp"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp"
-    android:layout_alignParentBottom="true"
-
-    >
-    <Button
-
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:id="@+id/generate_bt"
-        android:background="#FFFFFF"
-        android:textAlignment="center"
-        android:layout_weight="1"
-        android:textColor="#555555"
-        android:text="Generate Color"
-        android:textSize="15dp"
-        />
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
 
-    <Button
-        android:layout_weight=".1"
-        android:layout_width="50dp"
-        android:layout_height="51dp"
-        android:id="@+id/add_color"
-        android:background="#FFFFFF"
-        />
+        >
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:id="@+id/generate_bt"
+            android:background="#FFFFFF"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textColor="#555555"
+            android:text="Generate Color"
+            android:textSize="15sp"
+            />
+
+        <Button
+
+            android:id="@+id/add_color"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight=".1"
+            android:background="@drawable/add_color_bt"
+            />
 
 
 
 
-</LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>
