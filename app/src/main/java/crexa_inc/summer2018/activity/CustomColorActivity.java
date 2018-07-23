@@ -1,29 +1,21 @@
 package crexa_inc.summer2018.activity;
 
-import android.app.Activity;
-import android.content.Context;
-import android.graphics.Color;
-import android.os.Vibrator;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 import crexa_inc.summer2018.R;
 
-public class RNGRGBActivity extends BaseActivity {
+public class CustomColorActivity extends BaseActivity {
+
+
 
     private int color = 0;
 
@@ -55,23 +47,17 @@ public class RNGRGBActivity extends BaseActivity {
 
 
     }
+
+
     @OnClick(R.id.add_color)
     public void add(){
 
         toastShort("Color added");
     }
 
-
-
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rngrgb);
-        ButterKnife.bind(this);
-
-
+        setContentView(R.layout.activity_custom_color);
     }
-    public void color(){
-
-    }
-
 }

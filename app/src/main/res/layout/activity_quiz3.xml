@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/Relative_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.RNGRGBActivity"
+    android:id="@+id/custom_Relative_background"
+    tools:context=".activity.CustomDialogActivity"
+    android:gravity="center">
 
-    >
+    <Button
+        android:id="@+id/custom_quiz3_dialog"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Dialog"/>
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="vertical"
-        android:id="@+id/textViews"
+        android:id="@+id/custom_textViews"
         >
 
         <TextView
 
-            android:id="@+id/textview_1"
+            android:id="@+id/custom_textview_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="#HEXTEST"
@@ -30,8 +35,8 @@
             />
 
         <TextView
-            android:layout_below="@id/textview_1"
-            android:id="@+id/textview_2"
+            android:layout_below="@id/custom_textview_1"
+            android:id="@+id/custom_textview_2"
             android:textSize="35sp"
             android:text="RGBTEST"
             android:layout_centerHorizontal="true"
@@ -56,7 +61,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:id="@+id/generate_bt"
+            android:id="@+id/custom_generate_bt"
             android:background="#FFFFFF"
             android:textAlignment="center"
             android:layout_weight="1"
@@ -67,7 +72,7 @@
 
         <Button
 
-            android:id="@+id/add_color"
+            android:id="@+id/custom_add_color"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_weight=".1"
@@ -79,4 +84,4 @@
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

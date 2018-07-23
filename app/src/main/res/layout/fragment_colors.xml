@@ -1,18 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/color_Relative_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.ColorsFragment">
+    tools:context=".activity.RNGRGBActivity"
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/color_textViews"
+        >
+
+        <TextView
+
+            android:id="@+id/color_textview_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#HEXTEST"
+            android:layout_marginBottom="30dp"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textSize="55sp"
+            />
+
+        <TextView
+            android:layout_below="@id/textview_1"
+            android:id="@+id/color_textview_2"
+            android:textSize="35sp"
+            android:text="RGBTEST"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager_viewpager"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"/>
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
 
-</FrameLayout>
+        >
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/color_generate_bt"
+            android:background="#FFFFFF"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textColor="#555555"
+            android:text="Generate Color"
+            android:textSize="15sp"
+            />
+
+        <Button
+
+            android:id="@+id/color_add_color"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight=".1"
+            android:background="@drawable/add_color_bt"
+            />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,6 +1,8 @@
 package crexa_inc.summer2018.fragment;
 
-import android.content.Intent;
+import android.content.Context;
+import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,30 +13,35 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import crexa_inc.summer2018.R;
-import crexa_inc.summer2018.activity.RNGRGBActivity;
+import crexa_inc.summer2018.activity.BaseActivity;
 import crexa_inc.summer2018.activity.colorRNG;
 
 
-public class ColorsFragment extends Fragment {
+public class TestFragment extends Fragment  {
+
 
     private Button generate;
     ViewPager viewPager;
     private TextView textview1;
     private TextView textview2;
     private View Mview;
-    private Button additional;
 
     private int color = 0;
     //int [] history5 = new int[5];
-    // private ArrayList <Integer> contextList = new ArrayList<Integer>();
+   // private ArrayList <Integer> contextList = new ArrayList<Integer>();
 
     public void onViewCreated(View view, @Nullable Bundle savedInstance) {
-        generate = getView().findViewById(R.id.color_generate_bt);
-        textview1 = getView().findViewById(R.id.color_textview_1);
-        textview2 = getView().findViewById(R.id.color_textview_2);
-        Mview = getView().findViewById(R.id.color_Relative_background);
+        generate = getView().findViewById(R.id.generate_bt);
+        textview1 = getView().findViewById(R.id.textview_1);
+        textview2 = getView().findViewById(R.id.textview_2);
+        Mview = getView().findViewById(R.id.Relative_background);
 
 
 
@@ -52,13 +59,6 @@ public class ColorsFragment extends Fragment {
                 textview2.setText(Integer.toString(-1*color));
             }
         });
-//        additional .setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
-
     }
 //    public ArrayList<Integer> getContent(){
 //        return contextList;
@@ -66,7 +66,7 @@ public class ColorsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup viewGroup, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.fragment_colors, viewGroup, false);
+        View view = inflater.inflate(R.layout.fragment_test, viewGroup, false);
 
         return view;
     }
@@ -76,5 +76,4 @@ public class ColorsFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
     }
-
 }
