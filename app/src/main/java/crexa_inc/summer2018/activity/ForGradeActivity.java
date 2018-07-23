@@ -2,6 +2,7 @@ package crexa_inc.summer2018.activity;
 
 import android.animation.ObjectAnimator;
 import android.animation.TypeEvaluator;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.GestureDetector;
@@ -26,6 +27,7 @@ public class ForGradeActivity extends BaseActivity implements View.OnTouchListen
     private GestureDetector gestureDetector;
     private int sumX=0;
     private int sumY=0;
+    private Color mColor;
     {
         ObjectAnimator animator =
                 ObjectAnimator.ofInt
@@ -104,13 +106,16 @@ public class ForGradeActivity extends BaseActivity implements View.OnTouchListen
                     if(Math.abs(sumX)>1000){
                         isToast = true;
                         toastShort("You scroll from right to left");
+
                     }
                 }
 
                 if(sumY<0){
                     if(Math.abs(sumY)>1000){
                         isToast = true;
+
                         toastShort("You scroll from top to bottom");
+                        tv.setBackgroundColor(mColor.rgb(256*(1000/sumX), 256*(1000/sumX), 256*(1000/sumX)));
                     }
                 }
                 if(sumY>0){
